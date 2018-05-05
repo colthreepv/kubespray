@@ -124,7 +124,7 @@ spec:
         # see: https://github.com/kubernetes/kubernetes/issues/29055 for details
         resources:
           requests:
-            cpu: 150m
+            cpu: {{ dns_cpu_requests }}
             memory: 20Mi
         volumeMounts:
         - name: kube-dns-config
